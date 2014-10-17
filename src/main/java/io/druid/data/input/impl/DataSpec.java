@@ -26,7 +26,7 @@ public interface DataSpec
 
   public List<SpatialDimensionSchema> getSpatialDimensions();
 
-  public Parser<String, Object> getParser() ;
+  public <T> Parser<T, String, Object> getParser() ;
 
   public ParseSpec toParseSpec(TimestampSpec timestampSpec, List<String> dimensionExclusions);
 }

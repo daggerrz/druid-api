@@ -30,7 +30,7 @@ public class JSONParseSpec extends ParseSpec
   }
 
   @Override
-  public Parser<String, Object> makeParser()
+  public Parser<String, String, Object> makeParser()
   {
     return new JSONParser(objectMapper, null);
   }

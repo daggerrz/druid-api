@@ -26,7 +26,7 @@ public class StringInputRowParser implements ByteBufferInputRowParser
 
   private final ParseSpec parseSpec;
   private final MapInputRowParser mapParser;
-  private final Parser<String, Object> parser;
+  private final Parser<String, String, Object> parser;
 
   private CharBuffer chars = null;
 

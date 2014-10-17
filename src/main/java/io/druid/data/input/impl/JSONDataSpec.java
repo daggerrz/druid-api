@@ -54,7 +54,7 @@ public class JSONDataSpec implements DataSpec
   }
 
   @Override
-  public Parser<String, Object> getParser()
+  public Parser<String, String, Object> getParser()
   {
     return new JSONParser();
   }

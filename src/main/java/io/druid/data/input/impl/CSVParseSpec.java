@@ -57,7 +57,7 @@ public class CSVParseSpec extends ParseSpec
   }
 
   @Override
-  public Parser<String, Object> makeParser()
+  public Parser<String, String, Object> makeParser()
   {
     return new CSVParser(Optional.fromNullable(listDelimiter), columns);
   }

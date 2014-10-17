@@ -66,9 +66,9 @@ public class DelimitedParseSpec extends ParseSpec
   }
 
   @Override
-  public Parser<String, Object> makeParser()
+  public Parser<String, String, Object> makeParser()
   {
-    Parser<String, Object> retVal = new DelimitedParser(
+    Parser<String, String, Object> retVal = new DelimitedParser(
         Optional.fromNullable(delimiter),
         Optional.fromNullable(listDelimiter)
     );

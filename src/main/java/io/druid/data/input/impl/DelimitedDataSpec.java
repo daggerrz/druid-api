@@ -92,9 +92,9 @@ public class DelimitedDataSpec implements DataSpec
   }
 
   @Override
-  public Parser<String, Object> getParser()
+  public Parser<String, String, Object> getParser()
   {
-    Parser<String, Object> retVal = new DelimitedParser(
+    Parser<String, String, Object> retVal = new DelimitedParser(
         Optional.fromNullable(delimiter),
         Optional.fromNullable(listDelimiter)
     );
